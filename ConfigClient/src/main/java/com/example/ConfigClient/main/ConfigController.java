@@ -16,10 +16,10 @@ public class ConfigController {
 	@Autowired
 	private ConfigurationData configdata;
 	
-	@Value("$vault.valueString")
+	@Value("${vault.valueString}")
 	private String value;
 	
-	@Value("$vault.valueFunction")
+	@Value("${vault.valueFunction}")
 	private String valueFun;
 	
 	
@@ -29,7 +29,7 @@ public class ConfigController {
 		return new BeanConfiguration(config.getMinimum(), config.getMaximum(), value, valueFun);
 	}
 	@RequestMapping(value="/vault",method=RequestMethod.GET)
-	public BeanConfiguration getVault(@Value("$vault.valueFunction") String valueFunction) {
+	public BeanConfiguration getVault(@Value("${vault.valueFunction}") String valueFunction) {
 		return new BeanConfiguration(config.getMinimum(), config.getMaximum(), value, valueFunction);
 	}
 	@GetMapping("/configData")
