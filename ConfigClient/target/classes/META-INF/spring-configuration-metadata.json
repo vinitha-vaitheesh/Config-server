@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "data",
+      "type": "com.example.ConfigClient.main.ConfigurationData",
+      "sourceType": "com.example.ConfigClient.main.ConfigurationData"
+    },
+    {
+      "name": "limits",
+      "type": "com.example.ConfigClient.main.Configuration",
+      "sourceType": "com.example.ConfigClient.main.Configuration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "data.maximumdata",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.ConfigClient.main.ConfigurationData"
+    },
+    {
+      "name": "data.minimumdata",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.ConfigClient.main.ConfigurationData"
+    },
+    {
+      "name": "limits.maximum",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.ConfigClient.main.Configuration"
+    },
+    {
+      "name": "limits.minimum",
+      "type": "java.lang.Integer",
+      "sourceType": "com.example.ConfigClient.main.Configuration"
+    }
+  ],
+  "hints": []
+}
